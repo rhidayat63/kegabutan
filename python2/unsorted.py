@@ -1,4 +1,5 @@
 import datetime as dt
+import make
 
 def monthReformat(str_date):
     # for this type date format 04 November 2019 18:40:05
@@ -23,4 +24,35 @@ def combine2List(list1, delimeter, list2):
     result = list()
     for i in range(len(list1)):
         result.append([list1[i], delimeter, list2[i]])
+    return result
+
+def gridDisplay(list_, column=1):
+    result = list()
+    size = len(list_)
+    item_per_column = int(math.ceil(size / column))
+    start = 0
+    end = start + item_per_column
+    # initializing
+    for i in range(item_per_column):
+        result.append(list())
+    
+    # put the actual data
+    while start + item_per_column < size:
+        index = 0
+        for i in range(start, end):
+            if isinstance(list_[i], (list, tuple)):
+                result[index].extend(list_[i])
+            else:
+                result[index].append(list_[i])
+            index += 1
+        start = end
+        end = start + item_per_column
+    
+    index = 0
+    for i in range(start, size):
+        if isinstance(list_[i], (list, tuple)):
+            result[index].extend(list_[i])
+        else:
+            result[index].append(list_[i])
+        index += 1
     return result
