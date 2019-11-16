@@ -17,10 +17,10 @@ def dateTrip(date_input):
     except:
         return date_input
 
-def combine2List(list1, list2):
+def combine2List(list1, delimeter, list2):
     # assumed that both list has same length
     # to make list look like => item1, :, item2
     result = list()
     for i in range(len(list1)):
-        result.append([list1[i], ':', list2[i]])
+        result.append([list1[i], delimeter, list2[i]])
     return result
