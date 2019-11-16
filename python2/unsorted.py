@@ -27,7 +27,7 @@ def combine2List(list1, delimeter, list2):
     return result
 
 def gridDisplay(list_, column=1):
-    # ex gridDisplay([a,b,c,d,e,f,g], column=2)
+    # ex: gridDisplay([a,b,c,d,e,f,g], column=2)
     # result:
     # [a, c, e, g]
     # [b, d, f,]
