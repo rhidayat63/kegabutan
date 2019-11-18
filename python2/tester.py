@@ -1,1 +1,1 @@
-print "just a testing"
+print "just a testing ok"
