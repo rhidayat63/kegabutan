@@ -33,7 +33,7 @@ def gridDisplay(list_, column=1):
     # [b, d, f,]
     result = list()
     size = len(list_)
-    item_per_column = int(math.ceil(size / column))
+    item_per_column = int(math.ceil(float(size) / column))
     start = 0
     end = start + item_per_column
     # initializing
