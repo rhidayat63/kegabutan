@@ -1,1 +1,1 @@
-print "hello world, again"
+print "just a testing"
