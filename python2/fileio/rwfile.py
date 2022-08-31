@@ -20,4 +20,4 @@ def codingFake(filepath, cls_command='cls'):
 		r1 = r1 * 0.01
 		time.sleep(r1)
 
-codingFake("README.md", 'clear')
+codingFake("Z:/programming/kantua/codes/user-service/command/src/main/java/asia/powerbiz/user/command/controllers/LoginController.java")
